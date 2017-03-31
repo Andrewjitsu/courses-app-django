@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<style>
+		body{
+			text-align: center;
+			margin-top: 100px;
+		}
+	</style>
+	<meta charset="UTF-8">
+	<title>Delete a Course</title>
+</head>
+<body>
+	<h2>Are you sure you want to delete the following course?</h1>
+	<p>Name: {{courses.name}}</p>
+	<p>Description: {{courses.description}}</p>
+	<a href="/"><button>No</button></a>
+	<a href="/confirm/{{courses.id}}"><button>Yes! I want to delete this</button></a>
+</body>
+</html>
